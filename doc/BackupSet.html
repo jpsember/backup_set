@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: BackupSet
+  
+    &mdash; Documentation by YARD 0.8.6.1
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (B)</a> &raquo;
+    
+    
+    <span class="title">BackupSet</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: BackupSet
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">BackupSet</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/backup_set.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+  <h2>Constant Summary</h2>
+  
+
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#backup_dir-instance_method" title="#backup_dir (instance method)">- (Object) <strong>backup_dir</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute backup_dir.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#backup_file-instance_method" title="#backup_file (instance method)">- (Object) <strong>backup_file</strong>(file_path) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Copy a file to the backup directory, if no such file already exists there
+(e.g. won&#39;t replace an older version of the file with a newer one).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#base_dir-instance_method" title="#base_dir (instance method)">- (Object) <strong>base_dir</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_backedup_files-instance_method" title="#get_backedup_files (instance method)">- (Object) <strong>get_backedup_files</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get list of all files in this backup set Returns array of paths relative to
+backup_dir.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_backup_sets_dir-instance_method" title="#get_backup_sets_dir (instance method)">- (Object) <strong>get_backup_sets_dir</strong>(backup_name, create_if_missing = true) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Determine the directory where backup sets would be constructed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_home_dir-instance_method" title="#get_home_dir (instance method)">- (Object) <strong>get_home_dir</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get user&#39;s home directory; exposed for unit tests.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (BackupSet) <strong>initialize</strong>(backup_name, base_directory = nil, max_current_backup_minutes = 20, expired_backup_days = 20) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>backup_name : name to form backups directory from base_directory :
+directory containing files to be backed up; if nil, uses current directory
+max_current_backup_minutes : maximum age of backup directory to be
+considered &#39;current&#39;; if not current,.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="BackupSet (class)">BackupSet</a></span></tt>) <strong>initialize</strong>(backup_name, base_directory = nil, max_current_backup_minutes = 20, expired_backup_days = 20) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>backup_name : name to form backups directory from base_directory :
+directory containing files to be backed up; if nil, uses current directory
+max_current_backup_minutes : maximum age of backup directory to be
+considered &#39;current&#39;; if not current,</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_a'>a</span> <span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_one'>one</span> <span class='id identifier rubyid_is'>is</span> <span class='id identifier rubyid_made'>made</span></code></pre>
+
+<p>expired_backup_days : if &gt; 0, backup directories older than this number
+of days are deleted</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/backup_set.rb', line 17</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_backup_name'>backup_name</span><span class='comma'>,</span><span class='id identifier rubyid_base_directory'>base_directory</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_max_current_backup_minutes'>max_current_backup_minutes</span><span class='op'>=</span><span class='int'>20</span><span class='comma'>,</span><span class='id identifier rubyid_expired_backup_days'>expired_backup_days</span><span class='op'>=</span><span class='int'>20</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_base_directory'>base_directory</span> <span class='op'>||=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+  <span class='ivar'>@base_abs_dir</span> <span class='op'>=</span> <span class='id identifier rubyid_abs_path_current_dir'>abs_path_current_dir</span><span class='lparen'>(</span><span class='id identifier rubyid_base_directory'>base_directory</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_sets_dir'>sets_dir</span> <span class='op'>=</span> <span class='id identifier rubyid_get_backup_sets_dir'>get_backup_sets_dir</span><span class='lparen'>(</span><span class='id identifier rubyid_backup_name'>backup_name</span><span class='comma'>,</span><span class='kw'>true</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_backup_dir_list'>backup_dir_list</span> <span class='op'>=</span> <span class='id identifier rubyid_get_backup_dir_list'>get_backup_dir_list</span><span class='lparen'>(</span><span class='id identifier rubyid_sets_dir'>sets_dir</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_expired_backup_days'>expired_backup_days</span> <span class='op'>!=</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_delete_expired_backups'>delete_expired_backups</span><span class='lparen'>(</span><span class='id identifier rubyid_backup_dir_list'>backup_dir_list</span><span class='comma'>,</span> <span class='id identifier rubyid_expired_backup_days'>expired_backup_days</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='ivar'>@backup_abs_dir</span> <span class='op'>=</span> <span class='id identifier rubyid_find_current_backup_dir'>find_current_backup_dir</span><span class='lparen'>(</span><span class='id identifier rubyid_sets_dir'>sets_dir</span><span class='comma'>,</span><span class='id identifier rubyid_backup_dir_list'>backup_dir_list</span><span class='comma'>,</span> <span class='id identifier rubyid_max_current_backup_minutes'>max_current_backup_minutes</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="backup_dir-instance_method">
+  
+    - (<tt>Object</tt>) <strong>backup_dir</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute backup_dir</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9
+10
+11</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/backup_set.rb', line 9</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_backup_dir'>backup_dir</span>
+  <span class='ivar'>@backup_dir</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="backup_file-instance_method">
+  
+    - (<tt>Object</tt>) <strong>backup_file</strong>(file_path) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Copy a file to the backup directory, if no such file already exists there
+(e.g. won&#39;t replace an older version of the file with a newer one)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/backup_set.rb', line 32</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_backup_file'>backup_file</span><span class='lparen'>(</span><span class='id identifier rubyid_file_path'>file_path</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='id identifier rubyid_warndb'>warndb</span> <span class='int'>0</span>
+  <span class='id identifier rubyid_file_path'>file_path</span> <span class='op'>=</span> <span class='id identifier rubyid_abs_path_relative_to_base'>abs_path_relative_to_base</span><span class='lparen'>(</span><span class='id identifier rubyid_file_path'>file_path</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_file_rel_path'>file_rel_path</span> <span class='op'>=</span> <span class='id identifier rubyid_path_relative_to_abs_dir'>path_relative_to_abs_dir</span><span class='lparen'>(</span><span class='id identifier rubyid_file_path'>file_path</span><span class='comma'>,</span><span class='ivar'>@base_abs_dir</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_backup_file_path'>backup_file_path</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='ivar'>@backup_abs_dir</span><span class='comma'>,</span><span class='id identifier rubyid_file_rel_path'>file_rel_path</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='op'>!</span><span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_exist?'>exist?</span><span class='lparen'>(</span><span class='id identifier rubyid_backup_file_path'>backup_file_path</span><span class='rparen'>)</span>
+    <span class='comment'># Create directories, if necessary
+</span>    <span class='const'>FileUtils</span><span class='op'>::</span><span class='id identifier rubyid_mkdir_p'>mkdir_p</span><span class='lparen'>(</span><span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_dirname'>dirname</span><span class='lparen'>(</span><span class='id identifier rubyid_backup_file_path'>backup_file_path</span><span class='rparen'>)</span><span class='rparen'>)</span>
+    <span class='comment'># Copy file to backup
+</span>    <span class='op'>!</span><span class='id identifier rubyid_db'>db</span> <span class='op'>||</span> <span class='id identifier rubyid_pr'>pr</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>attempting to copy\n &#39;%s&#39;\n to\n &#39;%s&#39;\n</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span><span class='id identifier rubyid_file_path'>file_path</span><span class='comma'>,</span><span class='id identifier rubyid_backup_file_path'>backup_file_path</span><span class='rparen'>)</span>
+    <span class='const'>FileUtils</span><span class='op'>::</span><span class='id identifier rubyid_cp'>cp</span><span class='lparen'>(</span><span class='id identifier rubyid_file_path'>file_path</span><span class='comma'>,</span><span class='id identifier rubyid_backup_file_path'>backup_file_path</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="base_dir-instance_method">
+  
+    - (<tt>Object</tt>) <strong>base_dir</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+46
+47
+48</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/backup_set.rb', line 46</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_base_dir'>base_dir</span>
+  <span class='ivar'>@base_abs_dir</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_backedup_files-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_backedup_files</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get list of all files in this backup set Returns array of paths relative to
+backup_dir</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+69
+70
+71</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/backup_set.rb', line 69</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_backedup_files'>get_backedup_files</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get_files_within_dir'>get_files_within_dir</span><span class='lparen'>(</span><span class='id identifier rubyid_backup_dir'>backup_dir</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_backup_sets_dir-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_backup_sets_dir</strong>(backup_name, create_if_missing = true) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Determine the directory where backup sets would be constructed</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+56
+57
+58
+59
+60
+61
+62
+63
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/backup_set.rb', line 56</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_backup_sets_dir'>get_backup_sets_dir</span><span class='lparen'>(</span><span class='id identifier rubyid_backup_name'>backup_name</span><span class='comma'>,</span><span class='id identifier rubyid_create_if_missing'>create_if_missing</span><span class='op'>=</span><span class='kw'>true</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_backup_name'>backup_name</span> <span class='op'>=</span> <span class='const'>BackupSet</span><span class='period'>.</span><span class='id identifier rubyid_sanitize_for_path'>sanitize_for_path</span><span class='lparen'>(</span><span class='id identifier rubyid_backup_name'>backup_name</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_q'>q</span> <span class='op'>=</span> <span class='id identifier rubyid_get_home_dir'>get_home_dir</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_dir'>dir</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='id identifier rubyid_get_home_dir'>get_home_dir</span><span class='lparen'>(</span><span class='rparen'>)</span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>._backupset_</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_backup_name'>backup_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>_</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_create_if_missing'>create_if_missing</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_directory?'>directory?</span><span class='lparen'>(</span><span class='id identifier rubyid_dir'>dir</span><span class='rparen'>)</span>
+    <span class='const'>Dir</span><span class='period'>.</span><span class='id identifier rubyid_mkdir'>mkdir</span><span class='lparen'>(</span><span class='id identifier rubyid_dir'>dir</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_dir'>dir</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_home_dir-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_home_dir</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get user&#39;s home directory; exposed for unit tests</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+75
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/backup_set.rb', line 75</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_home_dir'>get_home_dir</span>
+  <span class='const'>Dir</span><span class='period'>.</span><span class='id identifier rubyid_home'>home</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Thu Dec  5 20:07:09 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.6.1 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>
