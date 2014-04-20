@@ -1,19 +1,12 @@
-#!/usr/bin/env ruby
-
 require 'backup_set'
-require 'js_base/test'
+require 'js_base/js_test'
 
-class TestBackupSet < Test::Unit::TestCase
+class TestBackupSet < JSTest
 
   def setup
+    super
     enter_test_directory
-    @swizzler = Swizzler.new
-    @swizzler.add('BackupSet','get_home_dir'){'.'}
-  end
-
-  def teardown
-    leave_test_directory
-    @swizzler.remove_all if @swizzler
+    self.swizzler.add('BackupSet','get_home_dir'){'.'}
   end
 
   def test_swizzled_backup_dir
